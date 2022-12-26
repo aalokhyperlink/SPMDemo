@@ -52,6 +52,8 @@ open class ImagePickerManagerX: UIImageView {
         self.image = image
     }
     
+    
+    
     @available(iOS 14, *)
     private func pickerViewController() -> PHPickerViewController {
         var config = PHPickerConfiguration()
