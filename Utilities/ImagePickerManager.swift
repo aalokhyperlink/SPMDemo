@@ -2,8 +2,8 @@
 //  String.swift
 //  ProjectMagick
 //
-//  Created by Kishan on 31/05/20.
-//  Copyright © 2020 Kishan. All rights reserved.
+//  Created by Aalok on 26/12/22.
+//  Copyright © 2022 Aalok. All rights reserved.
 //
 
 import UIKit
@@ -53,7 +53,6 @@ open class ImagePickerManagerX: UIImageView {
     }
     
     
-    
     @available(iOS 14, *)
     private func pickerViewController() -> PHPickerViewController {
         var config = PHPickerConfiguration()
@@ -64,6 +63,7 @@ open class ImagePickerManagerX: UIImageView {
         vc.delegate = self
         return vc
     }
+    
     
     private func checkPermissionForCamera(vc : UIViewController) {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
